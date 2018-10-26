@@ -42,60 +42,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Shudder/DefaultMovieTableViewCell.swift"
-            timestampString = "562281775.3049279"
+            timestampString = "562282706.271788"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
             landmarkName = "DefaultMovieCell"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Shudder.DefaultMovieCell.store.getter : Shudder.DataStore"
-                  moduleName = "Shudder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zain/Desktop/Shudder/Shudder/DefaultMovieTableViewCell.swift"
-                  timestampString = "562280296.480283"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Shudder.DefaultMovieCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Shudder.DefaultMovieCell"
-                  moduleName = "Shudder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zain/Desktop/Shudder/Shudder/DefaultMovieTableViewCell.swift"
-                  timestampString = "562280296.48218"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "308">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Shudder.DefaultMovieCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Shudder.DefaultMovieCell&gt;"
-                  moduleName = "Shudder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zain/Desktop/Shudder/Shudder/DefaultMovieTableViewCell.swift"
-                  timestampString = "562280296.484067"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "284">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shudder/MainFeedWorker.swift"
+            timestampString = "562282765.028582"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "performFlickrSearch(request:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

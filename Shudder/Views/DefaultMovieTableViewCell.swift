@@ -15,8 +15,7 @@ class DefaultMovieCell: UITableViewCell{
     let defaultMovieCollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout.init())
     
      var imagesToDisplay: [UIImage] = [UIImage]()
-    
-    let store = DataStore.sharedInstance
+
     
     func layOutCollectionView(){
         self.contentView.backgroundColor = shudderBackgroundColor

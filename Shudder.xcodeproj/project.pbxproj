@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		605C4AECA55F069EDF39AE32 /* Pods_Shudder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624183775BDECA5B3D16BCEE /* Pods_Shudder.framework */; };
 		BFE07144217F913500429996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07143217F913500429996 /* AppDelegate.swift */; };
-		BFE07146217F913500429996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07145217F913500429996 /* ViewController.swift */; };
 		BFE07149217F913500429996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE07147217F913500429996 /* Main.storyboard */; };
 		BFE0714C217F913500429996 /* Shudder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFE0714A217F913500429996 /* Shudder.xcdatamodeld */; };
 		BFE0714E217F913700429996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0714D217F913700429996 /* Assets.xcassets */; };
@@ -26,7 +25,6 @@
 		BFE07180217F998F00429996 /* DefaultMovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0717C217F998F00429996 /* DefaultMovieCollectionCell.swift */; };
 		BFE07181217F998F00429996 /* FeaturedMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0717D217F998F00429996 /* FeaturedMovieCollectionViewCell.swift */; };
 		BFE07183217F9AB400429996 /* Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07182217F9AB400429996 /* Navbar.swift */; };
-		BFE07185217FB22F00429996 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07184217FB22F00429996 /* Datastore.swift */; };
 		BFE07187217FCEA800429996 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE07186217FCEA800429996 /* Constants.swift */; };
 		D6640326AFE34F9E1094B4BF /* Pods_ShudderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70215020E4CBCF95FB439F4F /* Pods_ShudderUITests.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +47,6 @@
 		7EA8AD3D1CC1FD92E93E529C /* Pods-Shudder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shudder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shudder/Pods-Shudder.release.xcconfig"; sourceTree = "<group>"; };
 		BFE07140217F913500429996 /* Shudder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shudder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE07143217F913500429996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFE07145217F913500429996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFE07148217F913500429996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE0714B217F913500429996 /* Shudder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shudder.xcdatamodel; sourceTree = "<group>"; };
 		BFE0714D217F913700429996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,7 +66,6 @@
 		BFE0717C217F998F00429996 /* DefaultMovieCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMovieCollectionCell.swift; sourceTree = "<group>"; };
 		BFE0717D217F998F00429996 /* FeaturedMovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedMovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		BFE07182217F9AB400429996 /* Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navbar.swift; sourceTree = "<group>"; };
-		BFE07184217FB22F00429996 /* Datastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
 		BFE07186217FCEA800429996 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DEE4F661163A9C833C558184 /* Pods-Shudder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shudder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shudder/Pods-Shudder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +110,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BFE008F22183C225001C868C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFE07172217F998500429996 /* FeaturedMovieCell.swift */,
+				BFE07175217F998600429996 /* DefaultMovieTableViewCell.swift */,
+				BFE0717C217F998F00429996 /* DefaultMovieCollectionCell.swift */,
+				BFE0717D217F998F00429996 /* FeaturedMovieCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFE008F32183C23A001C868C /* MainFeed */ = {
+			isa = PBXGroup;
+			children = (
+				BFE07166217F920300429996 /* MainFeedPresenter.swift */,
+				BFE07167217F920300429996 /* MainFeedWorker.swift */,
+				BFE07168217F920300429996 /* MainFeedRouter.swift */,
+				BFE07169217F920300429996 /* MainFeedModels.swift */,
+				BFE0716A217F920300429996 /* MainFeedViewController.swift */,
+				BFE0716B217F920300429996 /* MainFeedInteractor.swift */,
+			);
+			path = MainFeed;
+			sourceTree = "<group>";
+		};
 		BFE07137217F913500429996 = {
 			isa = PBXGroup;
 			children = (
@@ -138,20 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				BFE07143217F913500429996 /* AppDelegate.swift */,
-				BFE07145217F913500429996 /* ViewController.swift */,
-				BFE07166217F920300429996 /* MainFeedPresenter.swift */,
-				BFE07167217F920300429996 /* MainFeedWorker.swift */,
-				BFE07168217F920300429996 /* MainFeedRouter.swift */,
-				BFE07169217F920300429996 /* MainFeedModels.swift */,
-				BFE0716A217F920300429996 /* MainFeedViewController.swift */,
+				BFE008F32183C23A001C868C /* MainFeed */,
 				BFE07186217FCEA800429996 /* Constants.swift */,
 				BFE07182217F9AB400429996 /* Navbar.swift */,
-				BFE0716B217F920300429996 /* MainFeedInteractor.swift */,
-				BFE07172217F998500429996 /* FeaturedMovieCell.swift */,
-				BFE07175217F998600429996 /* DefaultMovieTableViewCell.swift */,
-				BFE0717C217F998F00429996 /* DefaultMovieCollectionCell.swift */,
-				BFE0717D217F998F00429996 /* FeaturedMovieCollectionViewCell.swift */,
-				BFE07184217FB22F00429996 /* Datastore.swift */,
+				BFE008F22183C225001C868C /* Views */,
 				BFE07147217F913500429996 /* Main.storyboard */,
 				BFE0714D217F913700429996 /* Assets.xcassets */,
 				BFE0714F217F913700429996 /* LaunchScreen.storyboard */,
@@ -385,9 +395,7 @@
 				BFE07181217F998F00429996 /* FeaturedMovieCollectionViewCell.swift in Sources */,
 				BFE07183217F9AB400429996 /* Navbar.swift in Sources */,
 				BFE07171217F920300429996 /* MainFeedInteractor.swift in Sources */,
-				BFE07185217FB22F00429996 /* Datastore.swift in Sources */,
 				BFE0716F217F920300429996 /* MainFeedModels.swift in Sources */,
-				BFE07146217F913500429996 /* ViewController.swift in Sources */,
 				BFE07176217F998600429996 /* FeaturedMovieCell.swift in Sources */,
 				BFE0714C217F913500429996 /* Shudder.xcdatamodeld in Sources */,
 				BFE07144217F913500429996 /* AppDelegate.swift in Sources */,

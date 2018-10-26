@@ -13,54 +13,8 @@
 import UIKit
 import SDWebImage
 
-struct Constants {
-    
-    struct FlickrURLParams {
-        static let APIScheme = "https"
-        static let APIHost = "api.flickr.com"
-        static let APIPath = "/services/rest"
-    }
-}
-
-struct FlickrAPIKeys {
-    static let SearchMethod = "method"
-    static let APIKey = "api_key"
-    static let Extras = "extras"
-    static let ResponseFormat = "format"
-    static let DisableJSONCallback = "nojsoncallback"
-    static let SafeSearch = "safe_search"
-    static let Text = "text"
-}
-
-struct FlickrAPIValues {
-    static let SearchMethod = "flickr.photos.search"
-    static let APIKey = "6018ce76bba90c3eff10d2f95093f634"
-    static let ResponseFormat = "json"
-    static let DisableJSONCallback = "1"
-    static let MediumURL = "url_m"
-    static let SafeSearch = "1"
-}
-
 class MainFeedWorker
 {
-    
-//    private func fetchImage(_ url: String) {
-//
-//        let imageURL = URL(string: url)
-//
-//        let task = URLSession.shared.dataTask(with: imageURL!) { (data, response, error) in
-//            if error == nil {
-//                let downloadImage = UIImage(data: data!)!
-//
-//                DispatchQueue.main.async(){
-//                    self.flickrImageView.image = downloadImage
-//                }
-//            }
-//        }
-//
-//        task.resume()
-//    }
-    
     func performFlickrSearch(request: MainFeed.Data.Request, completion: @escaping (_ result: MainFeed.Data.Response)->Void) {
         
         // Perform the request
@@ -69,14 +23,10 @@ class MainFeedWorker
         let baseURL = "https://api.flickr.com/services/rest?method=flickr.galleries.getPhotos&extras=url_m&format=json&nojsoncallback=1&gallery_id=5704-72157622566655097&api_key=\(apiKeyString)&extras=url_m"
         let url = URL(string: baseURL)!
         let request = URLRequest(url: url)
-        
-        
-        
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let err = error {
                 print("Could not complete the request \(error?.localizedDescription)")
             } else {
-                
             }
             
             let parsedResult = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
@@ -89,29 +39,20 @@ class MainFeedWorker
                         
                          let photoTitle = photoDict["title"] as? String
                          let imageUrlString = photoDict["url_m"] as? String
-
-                        let url = URL(string: imageUrlString!)
-                        let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-                        
+                         let url = URL(string: imageUrlString!)
+                         let data = try? Data(contentsOf: url!) 
                         if let imageData = data {
                             imagesArray.append(UIImage(data: imageData)!)
                         }
                         
                     }
-                    
                     completion(MainFeed.Data.Response(images: imagesArray, responseCode: 200))
-                    
-
                 } else {
                     print("Cant find key 'photo' in \(photosDictionary)")
                 }
             } else {
                     print("Cant find key 'photos' in \(parsedResult)")
             }
-            
-            
-           
-            
         }
         task.resume()
   }

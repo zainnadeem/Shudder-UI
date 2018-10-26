@@ -16,7 +16,6 @@ class FeaturedMovieCell: UITableViewCell{
     
     var imagesToDisplay: [UIImage] = [UIImage]()
     
-    let store = DataStore.sharedInstance
 
     
     func layOutCollectionView(){

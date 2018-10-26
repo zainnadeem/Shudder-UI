@@ -36,7 +36,7 @@ class MainFeedViewController: UIViewController, MainFeedDisplayLogic
     
     lazy var tableView : UITableView = UITableView()
     
-    let store = DataStore.sharedInstance
+   
     var imagesForView = [UIImage]()
     
   
@@ -97,6 +97,10 @@ class MainFeedViewController: UIViewController, MainFeedDisplayLogic
     self.setViewConstraints()
     
     fetchVideos(request: MainFeed.Data.Request(searchString: ""))
+    
+
+    self.tabBarController?.tabBar.items?[0].title = NSLocalizedString("Featured", comment: "comment")
+    
   }
     
     
@@ -120,11 +124,6 @@ class MainFeedViewController: UIViewController, MainFeedDisplayLogic
         }
         
     }
-    
-
-
-  
-
 }
 
 extension MainFeedViewController: UITableViewDataSource {
